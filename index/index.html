@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container">       
+        <section class="first-sec"> 
+            <div>
+                <img src="../assets/slack-profile-picture.jpeg" alt="Owolabi Omobanke" 
+                data-testid="slackDisplayName">  
+            </div>  
+            <div>   
+                <h1 data-testid="slackUserName">Omobanke</h1>
+            </div>
+        </section>
+
+        <section class="week-section">
+            <div data-testid="currentDayOfTheWeek">
+                <p id="day"></p>
+            </div>
+            <div data-testid="currentUTCTime">
+                <p id="time"></p>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const currentLocalDate = new Date();
+            const dayOfWeek = currentLocalDate.toLocaleString('en-US', { weekday: 'long' });
+
+            // Set the timezone to Nigerian time (GMT+1)
+            const options = { timeZone: 'Africa/Lagos', hour12: false };
+            const time = currentLocalDate.toLocaleTimeString('en-US', options);
+
+            document.getElementById('day').textContent = `${dayOfWeek},`;
+            document.getElementById('time').textContent = `${time }`;
+        }
+
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>
