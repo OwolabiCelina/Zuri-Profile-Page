@@ -1,6 +1,7 @@
 body{
     background-color: rgb(37, 36, 36);
     font-family: sans-serif;
+    margin: 4%;
 }
 img{
     width: 100%;
@@ -70,6 +71,9 @@ img{
 }
 
 @media screen and (max-width: 490px){
+    body{
+        margin: 3%;
+    }
     img{
         width: 60%;
         height: 30%;
