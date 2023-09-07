@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(37, 36, 36);
+    font-family: sans-serif;
+}
+img{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+.first-sec{
+    text-align: center;
+}
+[data-testid="slackUserName"]{
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+}
+.week-section{
+    display: flex;
+    justify-content: center;
+    color: black;
+    border: 2px solid rgb(43, 43, 251);
+    margin: 0 35% 0 35%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: white;
+}
+
+.week-section:hover {
+    background-color: palegoldenrod;
+    transition: color 0.3s
+}
+
+.my-stack{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(43, 43, 251);
+}
+
+[data-testid="gitHubURL" ]{
+    text-decoration: none; 
+}
+
+#repo{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: rgb(117, 110, 104);
+    }
+    img{
+    width: 80%;
+    height: 40%;
+}
+    [data-testid="slackUserName"]{
+    font-size: 2rem;
+    font-weight: 300;
+}
+    .week-section{
+    font-size: 1rem;
+    font-weight: 400;
+}
+    .my-stack{
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 490px){
+    img{
+        width: 60%;
+        height: 30%;
+    }
+        [data-testid="slackUserName"]{
+        font-size: 1rem;
+        font-weight: 200;
+    }
+        .week-section{
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0 25% 0 25%;
+
+    }
+        .my-stack{
+        font-size: 1.0rem;
+    }
+    #repo{
+        font-size: 1rem;
+    }
+}
