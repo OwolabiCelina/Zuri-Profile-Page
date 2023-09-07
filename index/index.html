@@ -44,7 +44,6 @@
             const currentLocalDate = new Date();
             const dayOfWeek = currentLocalDate.toLocaleString('en-US', { weekday: 'long' });
 
-            // Set the timezone to Nigerian time (GMT+1)
             const options = { timeZone: 'Africa/Lagos', hour12: false };
             const time = currentLocalDate.toLocaleTimeString('en-US', options);
 
