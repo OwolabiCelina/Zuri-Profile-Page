@@ -1,6 +1,7 @@
 body{
     background-color: rgb(37, 36, 36);
     font-family: sans-serif;
+    margin: 4%;
 }
 img{
     width: 100%;
@@ -17,14 +18,14 @@ img{
     font-weight: 500;
 }
 .week-section{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     color: black;
     border: 2px solid rgb(43, 43, 251);
     margin: 0 35% 0 35%;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 600;
     background-color: white;
 }
 
@@ -61,7 +62,7 @@ img{
     font-weight: 300;
 }
     .week-section{
-    font-size: 1rem;
+    font-size: 1.0rem;
     font-weight: 400;
 }
     .my-stack{
@@ -70,6 +71,9 @@ img{
 }
 
 @media screen and (max-width: 490px){
+    body{
+        margin: 3%;
+    }
     img{
         width: 60%;
         height: 30%;
